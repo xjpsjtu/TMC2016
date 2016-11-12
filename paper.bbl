@@ -1,0 +1,183 @@
+\begin{thebibliography}{10}
+
+\bibitem{6979011}
+N.~Anari, G.~Goel, and A.~Nikzad.
+\newblock Mechanism design for crowdsourcing: An optimal 1-1/e competitive
+  budget-feasible mechanism for large markets.
+\newblock In {\em FOCS}, 2014.
+
+\bibitem{babaioff2009secretary}
+M.~Babaioff, M.~Dinitz, A.~Gupta, N.~Immorlica, and K.~Talwar.
+\newblock Secretary problems: weights and discounts.
+\newblock In {\em SODA}, 2009.
+
+\bibitem{Bei:2012:BFM:2213977.2214020}
+X.~Bei, N.~Chen, N.~Gravin, and P.~Lu.
+\newblock Budget feasible mechanism design: From prior-free to bayesian.
+\newblock In {\em STOC}, 2012.
+
+\bibitem{chen2011approximability}
+N.~Chen, N.~Gravin, and P.~Lu.
+\newblock On the approximability of budget feasible mechanisms.
+\newblock In {\em SODA}, 2011.
+
+\bibitem{Chen:2011:ABF:2133036.2133090}
+N.~Chen, N.~Gravin, and P.~Lu.
+\newblock On the approximability of budget feasible mechanisms.
+\newblock In {\em SODA}, 2011.
+
+\bibitem{Frazier:2014:IE:2600057.2602897}
+P.~Frazier, D.~Kempe, J.~Kleinberg, and R.~Kleinberg.
+\newblock Incentivizing exploration.
+\newblock In {\em Proceedings of the Fifteenth ACM Conference on Economics and
+  Computation}, New York, NY, USA, 2014.
+
+\bibitem{Fujita:2014:ASA:2615731.2616036}
+K.~Fujita.
+\newblock Automated strategy adaptation for multi-times bilateral closed
+  negotiations.
+\newblock In {\em Proceedings of the 2014 International Conference on
+  Autonomous Agents and Multi-agent Systems}, Richland, SC, 2014.
+
+\bibitem{ganti2011mobile}
+R.~K. Ganti, F.~Ye, and H.~Lei.
+\newblock Mobile crowdsensing: current state and future challenges.
+\newblock {\em Communications Magazine, IEEE}, 49(11):32--39, 2011.
+
+\bibitem{Hummel:2015:ITI:2736277.2741079}
+P.~Hummel and R.~P. McAfee.
+\newblock When does improved targeting increase revenue?
+\newblock In {\em WWW}, 2015.
+
+\bibitem{jin2015quality}
+H.~Jin, L.~Su, D.~Chen, K.~Nahrstedt, and J.~Xu.
+\newblock Quality of information aware incentive mechanisms for mobile crowd
+  sensing systems.
+\newblock In {\em MobiHoc}, 2015.
+
+\bibitem{khuller1999budgeted}
+S.~Khuller, A.~Moss, and J.~S. Naor.
+\newblock The budgeted maximum coverage problem.
+\newblock {\em Information Processing Letters}, 70(1):39--45, 1999.
+
+\bibitem{koukoumidis2011signalguru}
+E.~Koukoumidis, L.-S. Peh, and M.~R. Martonosi.
+\newblock Signalguru: leveraging mobile phones for collaborative traffic signal
+  schedule advisory.
+\newblock In {\em MobiSys}. ACM, 2011.
+
+\bibitem{koutsopoulos2013optimal}
+I.~Koutsopoulos.
+\newblock Optimal incentive-driven design of participatory sensing systems.
+\newblock In {\em INFOCOM}. IEEE, 2013.
+
+\bibitem{7037601}
+T.~Kumrai, K.~Ota, M.~Dong, and P.~Champrasert.
+\newblock An incentive-based evolutionary algorithm for participatory sensing.
+\newblock In {\em GLOBECOM}, 2014.
+
+\bibitem{lane2010survey}
+N.~D. Lane, E.~Miluzzo, H.~Lu, D.~Peebles, T.~Choudhury, and A.~T. Campbell.
+\newblock A survey of mobile phone sensing.
+\newblock {\em IEEE Communications magazine}, 48(9):140--150, 2010.
+
+\bibitem{lee2010dynamic}
+J.-S. Lee and B.~Hoh.
+\newblock Dynamic pricing incentive for participatory sensing.
+\newblock {\em Pervasive and Mobile Computing}, 6(6):693--708, 2010.
+
+\bibitem{maisonneuve2009noisetube}
+N.~Maisonneuve, M.~Stevens, M.~E. Niessen, and L.~Steels.
+\newblock Noisetube: Measuring and mapping noise pollution with mobile phones.
+\newblock {\em Information Technologies in Environmental Engineering}, pages
+  215--228, 2009.
+
+\bibitem{mathur2010parknet}
+S.~Mathur, T.~Jin, N.~Kasturirangan, J.~Chandrasekaran, W.~Xue, M.~Gruteser,
+  and W.~Trappe.
+\newblock Parknet: drive-by sensing of road-side parking statistics.
+\newblock In {\em MobiSys}. ACM, 2010.
+
+\bibitem{nisan2007algorithmic}
+N.~Nisan, T.~Roughgarden, E.~Tardos, and V.~V. Vazirani.
+\newblock {\em Algorithmic Game Theory}.
+\newblock Cambridge University Press, 2007.
+
+\bibitem{nunes2015multi}
+E.~Nunes and M.~Gini.
+\newblock Multi-robot auctions for allocation of tasks with temporal
+  constraints.
+\newblock In {\em AAAI}, 2015.
+
+\bibitem{Olariu:2014:AIA:2581555.2581569}
+S.~Olariu, S.~Mohrehkesh, X.~Wang, and M.~C. Weigle.
+\newblock On aggregating information in actor networks.
+\newblock {\em SIGMOBILE Mob. Comput. Commun. Rev.}, 18(1):85--96, 2014.
+
+\bibitem{peng2015pay}
+D.~Peng, F.~Wu, and G.~Chen.
+\newblock Pay as how well you do: A quality based incentive mechanism for
+  crowdsensing.
+\newblock In {\em MobiHoc}, 2015.
+
+\bibitem{rana2010ear}
+R.~K. Rana, C.~T. Chou, S.~S. Kanhere, N.~Bulusu, and W.~Hu.
+\newblock Ear-phone: an end-to-end participatory urban noise mapping system.
+\newblock In {\em IPSN}, 2010.
+
+\bibitem{rasmussen1975choosing}
+W.~T. Rasmussen and S.~R. Pliska.
+\newblock Choosing the maximum from a sequence with a discount function.
+\newblock {\em Applied Mathematics and Optimization}, 2(3):279--289, 1975.
+
+\bibitem{Shi:2014:OAF:2591971.2591980}
+W.~Shi, L.~Zhang, C.~Wu, Z.~Li, and F.~C. Lau.
+\newblock An online auction framework for dynamic resource provisioning in
+  cloud computing.
+\newblock In {\em SIGMETRICS}, 2014.
+
+\bibitem{singer2010budget}
+Y.~Singer.
+\newblock Budget feasible mechanisms.
+\newblock In {\em FOCS}, 2010.
+
+\bibitem{singer2013pricing}
+Y.~Singer and M.~Mittal.
+\newblock Pricing mechanisms for crowdsourcing markets.
+\newblock In {\em WWW}, 2013.
+
+\bibitem{wang2013crowdatlas}
+Y.~Wang, X.~Liu, H.~Wei, G.~Forman, C.~Chen, and Y.~Zhu.
+\newblock Crowdatlas: self-updating maps for cloud and personal use.
+\newblock In {\em MobiSys}, 2013.
+
+\bibitem{wu2014strategy}
+F.~Wu, J.~Liu, Z.~Zheng, and G.~Chen.
+\newblock A strategy-proof online auction with time discounting values.
+\newblock In {\em AAAI}, 2014.
+
+\bibitem{yan2011crowdpark}
+T.~Yan, B.~Hoh, D.~Ganesan, K.~Tracton, T.~Iwuchukwu, and J.-S. Lee.
+\newblock Crowdpark: A crowdsourcing-based parking reservation system for
+  mobile phones.
+\newblock {\em University of Massachusetts at Amherst Tech. Report}, 2011.
+
+\bibitem{yang2012crowdsourcing}
+D.~Yang, G.~Xue, X.~Fang, and J.~Tang.
+\newblock Crowdsourcing to smartphones: incentive mechanism design for mobile
+  phone sensing.
+\newblock In {\em MobiCom}. ACM, 2012.
+
+\bibitem{Zhang:2015:OAI:2796314.2745855}
+X.~Zhang, Z.~Huang, C.~Wu, Z.~Li, and F.~C. Lau.
+\newblock Online auctions in iaas clouds: Welfare and profit maximization with
+  server costs.
+\newblock {\em SIGMETRICS Perform. Eval. Rev.}, 43(1):3--15, June 2015.
+
+\bibitem{zhao2014crowdsource}
+D.~Zhao, X.-Y. Li, and H.~Ma.
+\newblock How to crowdsource tasks truthfully without sacrificing utility:
+  Online incentive mechanisms with budget constraint.
+\newblock In {\em INFOCOM}, 2014.
+
+\end{thebibliography}

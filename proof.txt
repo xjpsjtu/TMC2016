@@ -1,0 +1,55 @@
+\begin{proof}
+Here, a large-scale crowdsensing system means that there are a large number of participants and a single participant cannot affect the market significantly~\cite{6979011}. Let $\mathbb{S}'$ be the sample set at time $T_1$ and run the $GetThreshold$ procedure on this set, we get a threshold $\rho$. Khuller \et\cite{khuller1999budgeted} proposed a \emph{modified greedy algorithm}, which has a constant competitive ratio $\frac{1}{2}(1-\frac{1}{e})$. We assume the output of this algorithm on $\mathbb{S}'$ is ${v_1,v_2,\cdots, v_r}$ and $\sum_{i \le r} b_r \le B'$ but $\sum_{i \le r+1} b_r > B' $. $B'$ equals $\frac{B}{2}$ here. In the last step in \emph{modified greedy algorithm}, we choose the participant with the highest value or those selected by the  well-known greedy strategy. But when the number of participants are very large, the output will have a high probability to be the latter. So the expected output of this algorithm approaches to the greedy output when $n$ is large enough. Our analysis is based on this fact that the bid of each participant is extremely tiny compared with the total budget. Assume that a bid satisfies $b_i \le \epsilon B$. So $\sum_{i \le r} b_i \ge B'-b_{r+1} \ge B'-\epsilon B =(\frac{1}{2}-\epsilon)B$. Let $\mathbb{S}_{OPT}$ be the optimal set when the provider has full information of the participants, $\mathbb{S}^1$ be the set of participants who arrive and departure before time $T_1$ in $\mathbb{S}_{OPT}$, and $\mathbb{S}^2$ be the set of participants who arrive and departure in the last stage in $\mathbb{S}_{OPT}$. When participants arrive uniformly (this assumption will only affect the constant coefficient), it is easy to show the expected value in this set is $E[V(\mathbb{S}^1)]=\frac{1}{4}E[V(\mathbb{S}_{OPT})]$. So the ratio of \emph{modified greedy algorithm} to the optimal solution $\mathbb{S}_{OPT}$ is at least a constant.
+
+Now, we compare the value of the participants selected in the last stage by our mechanism with the value of those selected by the \emph{modified greedy algorithm}. If this ratio is a constant, the competitive ratio of our algorithm will be a constant.
+
+We consider the participants who fail to be selected. We set the parameter $\lambda$ to satisfy this condition: $\frac{\left(\frac{U}{L}\right)^{l-1}}{\lambda} \le \frac{1}{2}$. Then we claim that with a high probability, there will be at least one participant has an efficiency larger than $\rho$, \ie, $\frac{v_i(t_i)}{b_i} \ge \rho$ but $\frac{v_i(t_i)}{\rho }+\sum_{j}p_j > B$. The threshold in this stage is $\rho$, which is smaller than $\frac{U}{2}$ with a selection of the parameter $\lambda$. Denote $P_i$ as the probability of the participant $i$ having an efficiency higher than $\rho$. So for any number $k$ of participants, there will be at least one participant having the efficiency larger than $\rho$ with a probability $P=1-\prod_{i=1}^kP_i$, which tends to be 1 when $k$ is large. Based on this, our expected total value approaches to the total value estimated below. For this participant $i$:
+\begin{small}
+\begin{align}
+\nonumber &v_i(t_i) \ge (B-\sum_{j}p_j)\rho \\
+\nonumber \Rightarrow\ &v_i \ge (B-\sum_{j}p_j)\rho
+\end{align}
+\end{small}
+
+Since $v_i \le Ub_i \le U\epsilon B$, we have $(B-\sum_j{p_j})\rho \le U\epsilon B$, \ie, $\sum_j{p_j} \ge (1-\frac{U\epsilon}{\rho})B$. If we can choose an appropriate parameter $\lambda$  \st  $1-\frac{U\epsilon}{\rho} > 0$ , the total payment will be at least a constant fraction of the total budget $B$. Then, we have:
+\begin{small}
+\begin{align}
+\nonumber \sum_{i \in\mathbb{S}} v_i &\ge \sum_{i \in\mathbb{S}}\rho_{i} \cdot p_i \\
+\nonumber &\ge \sum_{i \in\mathbb{S}}\left(\frac{U}{L}\right)^{-l}\rho \cdot p_i\\
+&\ge \frac{v_1+\dots+v_m}{\lambda B}\left(\frac{U}{L}\right)^{1-l}\sum_{i \in\mathbb{S}}p_i,
+\end{align}
+\end{small}
+where $\rho_i$ denotes the threshold when participant $i$ is selected. We can get
+\begin{eqnarray}
+\frac{\sum_{i \in\mathbb{S}}v_i}{v_1+\dots+v_m} > \frac{ (1-\frac{U\epsilon}{\rho})}{\lambda}\left(\frac{U}{L}\right)^{1-l}
+\end{eqnarray}
+
+The requirement for $\lambda$ is:
+\begin{align}
+ \nonumber U\epsilon < \frac{\frac{v_1+\dots+v_m}{b_1+\dots+b_m}\left(\frac{U}{L}\right)^{l-1}}{\lambda}, 
+ \end{align}
+ \ie, $ \lambda < \frac{\frac{v_1+\dots+v_m}{b_1+\dots+b_m}\left(\frac{U}{L}\right)^{l-1}}{U\epsilon}. $  It's noticed that $\frac{v_1+\dots+v_m}{b_1+\dots+b_m} \ge L$, so we can relax our restricted condition to $ \lambda < \frac{L\left(\frac{U}{L}\right)^{l-1}}{U\epsilon}$, \ie, $\lambda \le \frac{\left(\frac{U}{L}\right)^{l-2}}{\epsilon}.$
+
+Based on the analysis above and the $Corollary$ 1, the expected competitive ratio is at least
+\begin{small}
+\begin{eqnarray}
+\small
+P\frac{L}{8(U+L)}(1-\frac{1}{e})\frac{ (1-\frac{U\epsilon}{\rho })}{\lambda}\left(\frac{U}{L}\right)^{1-l}.
+\end{eqnarray}
+\end{small}
+
+We note that although $\rho$ is a variable, it is bounded because of the bounded efficiency. So we can take the lower bound to be the competitive ratio. The calculation process is omitted here. When $\epsilon$ and $P$ approach to 0 and 1 respectively, the competitive ratio is:
+\begin{eqnarray}
+\frac{L}{8\lambda(U+L)}(1-\frac{1}{e})\left(\frac{U}{L}\right)^{1-l}.
+\end{eqnarray}
+
+The restriction condition on the parameter $\lambda$ is:
+\begin{align}
+2\left(\frac{U}{L}\right)^{l-1}\le\lambda < \frac{1}{\epsilon}\left(\frac{U}{L}\right)^{l-2}.
+\end{align}
+
+When $\epsilon$ is sufficiently small, we can always find such a parameter $\lambda$ equals $2\left(\frac{U}{L}\right)^{l-1}$. Then the expected competitive ratio is:
+\begin{align}
+\left(\frac{U}{L}\right)^{2-2l}\frac{U}{16(U+L)}(1-\frac{1}{e}). 
+\end{align}
+\end{proof}
