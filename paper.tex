@@ -66,20 +66,29 @@ Crowdsensing has become increasingly popular due to its ability to collect a mas
 
 %Crowdsensing is a new paradigm of applications that includes a platform and ubiquitous participants who hold mobile devices equipped with enhanced sensors~\cite{ganti2011mobile}. The platform recruits participants to upload sensing data and provide service for others. While participants will consume their own resources so they are reluctant to share their sensing capabilities. The quality and accuracy of service provided by platform is relied on the large-scale data submitted by participants, so it is required to design an incentive mechanism to incent the participants by compensating some monetary payment. Many online incentive mechnism designs have been applied in these kind of crowdsensing applications, \eg, zhao \et. designed an online incentive mechanism with budget constraint, which is modeled as an online auction~\cite{zhao2014crowdsource}, Singer and Mittal designed a pricing mechanisms for crowdsourcing markets~\cite{singer2013pricing}.
 
-Mobile crowdsensing is a novel application paradigm that utilizes mobile devices to collect, analyze, and share their local information~\cite{ganti2011mobile,lane2010survey}. It usually consists of a service provider, service requesters, and mobile device users. The service provider (a.k.a., the crowdsensing platform), which usually resides in the cloud, recruits participants from mobile device users to upload their sensing data, and then provides services to service requesters based on the collected information. A wide variety of applications has emerged in recent years, including NoiseTube and Ear-phone~\cite{maisonneuve2009noisetube,rana2010ear} for noise monitoring, SignalGuru and CrowdAtlas~\cite{koukoumidis2011signalguru,wang2013crowdatlas} for traffic monitoring, and CrowdPark, Parknet~\cite{yan2011crowdpark,mathur2010parknet} for finding on-street parking spots.
+Mobile crowdsensing is a novel application paradigm that utilizes mobile devices to collect, analyze, and share their local information~\cite{ganti2011mobile,lane2010survey}. It usually consists of a service provider, service requesters, and mobile device users. The service provider (a.k.a., the crowdsensing platform), which usually resides in the cloud, recruits participants from mobile device users to upload their sensing data, and then provides services to service requesters based on the collected information. A wide variety of applications has emerged in recent years, including NoiseTube~\cite{maisonneuve2009noisetube} and Ear-phone~\cite{rana2010ear} for noise monitoring, SignalGuru~\cite{koukoumidis2011signalguru} and CrowdAtlas~\cite{wang2013crowdatlas} for traffic monitoring, and CrowdPark~\cite{yan2011crowdpark}, Parknet~\cite{mathur2010parknet} for finding on-street parking spots.
 
-Since participating in crowdsensing tasks requires the participants to devote resource consumptions of their smartphones, participants are usually reluctant to share their sensing capabilities. Thus, it is necessary to design an incentive mechanism to compensate the participants. According to different settings of scenarios, two cases are often discussed, \ie, offline setting and online setting. Researches on incentive mechanism designs, such as~\cite{yang2012crowdsourcing,koutsopoulos2013optimal}, are usually based on offline scenarios, where participants are present simultaneously while the online scenarios are more common in practice, where participants arrive and leave dynamically. Designing an incentive mechanism in online scenarios is much more complicated, due to the lack of future information. Besides, it brings challenges in the realization of strategy-proofness, since participants may misreport their arrival or departure time in order to gain higher benefits. Here, intuitively, strategy-proofness means that one can maximize her benefit by truthfully revealing her private information (\eg, arrival time, departure time, or sensing cost).
+However, a well running crowdsensing application needs massive data contributed by the participants to ensure the service quality. Since participating in crowdsensing tasks requires the participants to devote resource consumptions of their smartphones, participants are usually reluctant to share their sensing capabilities(\eg, \cite{Kawajiri:2014:SCI:2632048.2636064,Fan:2015:PTT:2789168.2795179,Karaliopoulos:2016:FLE:2942358.2942369}. Thus, it is necessary to design an incentive mechanism to compensate the participants. According to different settings of scenarios, two cases are often discussed, \ie, offline setting and online setting. Researches on incentive mechanism designs, such as~\cite{yang2012crowdsourcing,koutsopoulos2013optimal}, are usually based on offline scenarios, where participants are present simultaneously while the online scenarios are more common in practice, where participants arrive and leave dynamically. Designing an incentive mechanism in online scenarios is much more complicated, due to the lack of future information. Besides, it brings challenges in the realization of strategy-proofness, since participants may misreport their arrival or departure time in order to gain higher benefits. Here, intuitively, strategy-proofness means that one can maximize her benefit by truthfully revealing her private information (\eg, arrival time, departure time, or sensing cost).
 
 %In this paper, we mainly focus on the online scenario where a provider intends to select participants to perform sensing tasks and provide them with some rewards under a limited budget. The provider then obtains the value of the sensing data and the selected participants can also receive monetary compensations after finishing sensing tasks. The key challenge for the provider is how to obtain the maximum total value and achieve incentive compatibility within the budget constraint. We model this process as a reverse auction. The bid of a participant contains her cost, value, and present time in the auction. In previous works, the value of a specific participant is often fixed, \ie, the participant has a bid of uniform value during her presence, independent of when she is selected. However, for some applications, the value of each participant's contributed data decreases with time. The time discounting property makes the problem more difficult. We aim to design an online incentive mechanism for crowdsensing with time-discounting value. The provider selects participants according to their bids (mainly their costs and time-discounting values), then gives them payments. The objective is to obtain the maximum total value and achieve strategy-proofness. It should be noted that for general utility functions, there is no truthful mechanism that can achieve a reasonable approximation ratio~\cite{singer2014budget}. In our paper, the total value of participants is simplified to the summation of values of selected participants.
 
-We note that most existing works on online mechanism design only consider flat values, \ie, the value of each participant's contributed data is fixed during her presence. However, in many time sensitive applications (\eg, real-time traffic or noise monitoring), the participants usually have time-discounting values \cite{babaioff2009secretary, wu2014strategy}, \ie, the value of each participant's contribution decreases as time goes by. The time-discounting property really complicates the mechanism design problem. For instance, it has been proved that no online algorithm can achieve a competitive ratio better than $\Omega(\textrm{log}n/\textrm{log}\,\textrm{log}n)$ for discounted secretary problem~\cite{babaioff2009secretary}.
+We note that most existing works on online mechanism design only consider flat values, \ie, the value of each participant's contributed data is fixed during her presence. However, in many time sensitive applications (\eg, real-time traffic or noise monitoring~\cite{Chon:2014:SWP:2632048.2636066,Ji:2016:USB:2971648.2971735,Zappatore:2016:CAM:2851613.2851699,Cherian:2015:PPG:2809695.2817881}), the participants usually have time-discounting values, \ie, the value of each participant's contribution decreases as time goes by~\cite{babaioff2009secretary, wu2014strategy}. The time-discounting property really complicates the mechanism design problem. For instance, it has been proved that no online algorithm can achieve a competitive ratio better than $\Omega(\textrm{log}n/\textrm{log}\,\textrm{log}n)$ for discounted secretary problem~\cite{babaioff2009secretary}. The time-discounting property of values will bring much more difficulty, especially on the strategy-proofness. In the most of the incentive mechanisms designed for online crowdsensing, the payment to a selected participant is based on her contributation. If she can cheat her type, such as arrival time or cost, she may be selected at different time. If this time is earlier than the time with truely report information, the value of this participant calculated by the platform will be higher than the true value. For the purpose of more reward, the participant may have more incentives to bid mendaciously.
 
 %It is known that for general utility functions, there is no truthful mechanism that can achieve a reasonable approximation ratio~\cite{singer2014budget}.
 
 In this paper, we focus on the online scenario where a provider intends to select participants to perform sensing tasks and provide them with some rewards under a budget constraint. The objective of the problem is to maximize the total values of selected participants considering the time-discounting properties, while at the same time achieve budget feasibility and strategy-proofness. Taking the budget constraint into account brings another challenge in designing a strategy-proof mechanism, since existing budget feasible mechanism design approaches(\eg, \cite{singer2010budget, chen2011approximability,Bei:2012:BFM:2213977.2214020,Chen:2011:ABF:2133036.2133090}) are not practical in scenarios where participants' values are time-discounting.
 
 To address these challenges, we propose a budget feasible online incentive mechanism with time-discounting values. We first consider the case where the total value is the summation of each participant's value. We define the efficiency of a participant as her value divided by her cost. Since participants arrive dynamically, we take advantage of the efficiency information of those who have arrived (we call a sample set) to calculate a threshold, and use it to guide subsequent selections. The intuition of our design is to greedily choose participants with the highest efficiencies from the sample set, and calculate their average efficiency multiplying an increasing factor as a threshold. The increasing factor is used to prevent the participants from misreporting their arrival or departure time. We divide the total time into slots. At each time slot, we select participants with efficiencies higher than the threshold within the budget constraint, and then calculate their payments. The payment scheme is carefully designed to ensure strategy-proofness and individual rationality. We prove that our mechanism can achieve a constant competitive ratio compared with the optimal solution with full information. We next consider the case where the total value is a submodular function of the selected participants, which is a more general situation. We prove that the time and cost-truthfullness can still be guaranteed by the newly designed algorithms. The numerical results show that our proposed approach has superior performance to our benchmark mechanisms.
+\subsection{Key Contributions}
+The main contributions of this paper is listed as follows
+\begin{itemize}
+\item We design an online incentive mechanism for crowdsensing. In this process, participants arrive over time. Our mechanism is designed to take advange of their efficiency to select them and give them a payment.
 
+\item As far as we know, we are the first to consider the time-discounting property of values. To address the potential new difficulty, we design a novel algorithm to calcuate a time-related threshold to select participants and determine their payment.
+
+\item We think about two cases according to the value function. The value function in these two cases is additive and submodular, the latter is more general.
+\end{itemize}
+\subsection{Paper Organization}
 The rest of the paper is organized as follows. We briefly review the related work in Section II. In Section III, We introduce the model of the budget feasible online mechanism problem with time-discounting values, and recall some important solution concepts. In Section IV, we present our design of a strategy-proof online  mechanism where the value function is the summation of each participant's value. In Section V, we consider the case where the value function submodular. In Section VI, we implement and evaluate our mechanism. Finally, we conclude this paper in Section VI.
 %**********************************************************
 %The key challenges in a budget feasible auction are how to persue the maximum value and balance incentive compatibility and the budget constraint. It gets harder when the participants arrive dynamicly. What is noticeable is that in existing works, the value of a specific participant is often fixed, \ie, the participant has a bid of uniform value during her presence in the auction, independent of when she is selected. But in some realms, such as applications intending to collect data by crowdsensng, which are always modeled as reverse auctions, the values of participants' contributed information decrease with time. The time discounting characteristic can make the problem more difficult. In this paper, we study a type of online reverse auction, where the participants compete to provide items or services with certain time discounting values. Then the provider gives some payment to the selected participants according to their bids. The objective is to obtain  the maximum total value and achieve strategy-proofness under a limited budget. It should be noted that for general utility functions, there is no truthful mechanism achieving a reasonable approximation ratio~\cite{singer2014budget}. In our paper, the total value of participants is simplified to the summation of their values at when they are selected.
@@ -110,10 +119,10 @@ The problem of designing incentive mechanism for mobile crowdsensing has been ex
 There are few previous researches focusing on the property of time-discounting values~\cite{Frazier:2014:IE:2600057.2602897,Olariu:2014:AIA:2581555.2581569,Fujita:2014:ASA:2615731.2616036}. Babaioff \et\cite{babaioff2009secretary} studied two extensions of the secretary problem, \ie, the discounted secretary problem and weighted secretary problem. In discounted secretary problem, the benefit derived from selecting an item is its original value multiplied by a time-discounting factor. Wu \et\cite{wu2014strategy} designed a strategy-proof online mechanism with time-discounting values, and achieved a 2-competitive ratio. Unfortunately, these work cannot be easily applied to scenarios with budget constraint. 
 %Singer designed a budget feasible mechanism especially when the value function is submodular~\cite{singer2010budget}. He derived an alternative characterization of the threshold payments. Chen \et designed a truthful budget feasible mechanism. It achieves a competitive ratio of less than 9, which is better than previous best known result 233.83~\cite{chen2011approximability}. Zhou \et modeled the budget-constrained bidding optimization problem as an online knapsack problem~\cite{zhou2008budget}. The threshold is calculated by a function of the fraction of capacity filled. Sarvapali and Nicholas studied the task allocation in crowdsourcing with multiple complex workflows under a budget constraint~\cite{tran2015crowdsourcing}. In~\cite{zhao2014crowdsource} and~\cite{zhang2014free}, the authors designed budget feasible online mechanisms for crowdsensing, but did not consider the time discounting property of values.
 
-The budget feasible mechanism has been widely studied to address budget limited mechanism design problem. Singer~\cite{singer2010budget} first designed a budget feasible mechanism for scenarios where the value function is submodular. Chen \et\cite{chen2011approximability} further proposed a truthful budget feasible mechanism. It achieves a competitive ratio of larger than $\frac{1}{9}$, which is better than previously best result 233.83. Nevertheless, these work also failed to consider the time-discounting property.
+The budget feasible mechanism has been widely studied to address budget limited mechanism design problem~\cite{Zhao:2016:BOI:3001647.3001648,Balkanski:2015:MFA:2764468.2764505,Chan:2016:BFM:2936924.2936945,Goel:2014:CAB:2600057.2602851,Lee:2016:MRV:2940716.2940745,Lu:2015:IEG:2764468.2764500,Goel:2015:PCA:2799630.2757277}. Singer~\cite{singer2010budget} first designed a budget feasible mechanism for scenarios where the value function is submodular. Chen \et\cite{chen2011approximability} further proposed a truthful budget feasible mechanism. It achieves a competitive ratio of larger than $\frac{1}{9}$, which is better than previously best result 233.83. Nevertheless, these work also failed to consider the time-discounting property.
 %Zhou \et\cite{zhou2008budget} modeled the budgeted bidding optimization problem as an online knapsack problem, where the threshold is calculated based on the fraction of capacity filled.
 
-Furthermore, there are some loosely related works on online mechanism design, \eg,  pricing and resource allocation in cloud computing~\cite{Shi:2014:OAF:2591971.2591980}, allocating tasks with temporal constraints~\cite{nunes2015multi}, improving targeting to increase total revenue~\cite{Hummel:2015:ITI:2736277.2741079}, and dynamic resource bundling and VM provisioning in IaaS clouds~\cite{Zhang:2015:OAI:2796314.2745855}.
+Furthermore, there are some loosely related works on online mechanism design~\cite{Naroditskiy:2013:ROM:2484920.2485023,Kesselheim:2015:SOM:2764468.2764487,Furuhata:2014:COC:2615731.2616027}, \eg,  pricing and resource allocation in cloud computing~\cite{Shi:2014:OAF:2591971.2591980}, allocating tasks with temporal constraints~\cite{nunes2015multi}, improving targeting to increase total revenue~\cite{Hummel:2015:ITI:2736277.2741079}, and dynamic resource bundling and VM provisioning in IaaS clouds~\cite{Zhang:2015:OAI:2796314.2745855}.
 
 In contrast to the previous works, we consider both the time discounting values and the budget limitation, and propose to design a budget feasible online mechanism that can guarantee strategy-proofness with a constant competitive ratio.
 
@@ -161,53 +170,54 @@ In contrast to the participants who always want to maximize their own utilities,
 Similarly, in the general case where the total value function is a submodular function, each participant has a type $\theta = (a,d,p,c)$, where $a,d,c$ still represents the arrival time, departure time and her cost. Her bid is denoted as $\hat{\theta}=(\hat{a},\hat{d},p,\hat{c})$. The total value respected to a selected participant set $\mathbb{S}$ is denoted as $f(\mathbb{S})$. Our objective is to select a set $\mathbb{S}$ to maximize the function $f(\mathbb{S})$. More details are in section V.
 
 \begin{table}[!hbp]
+\caption{Notations}
 \center
-\begin{tabular}{|c|c|}
+\begin{tabular}{cc}
 \hline
 
 Symbol & Description\\
 \hline
 $\mathbb{N}={1,2,...,n}$ & The participant set \\
-\hline
+% \hline
 $B$ & The total budget\\
-\hline
+% \hline
 $\theta_i$ & Type of participant $i$\\
-\hline
+% \hline
 $a_i$ & arrival time of participant $i$\\
-\hline
+% \hline
 $d_i$ & departure time of participant $i$\\
-\hline
+% \hline
 $v_i$ & value of participant $i$\\
-\hline
+% \hline
 $c_i$ & cost of participant $i$\\
-\hline
+% \hline
 $\hat{\theta}_i$ & bid of participant $i$\\
-\hline
+% \hline
 $\mathbb{T}=\{1,2,...,T\}$ & the time slot set\\
-\hline
+% \hline
 $\beta$ & time-discounting factor\\
-\hline
+% \hline
 $p_i$ & payment of participant $i$\\
-\hline
+% \hline
 $\mathbb{S}$ & selected participant set\\
-\hline
+% \hline
 $V$ & The total value\\
-\hline
+% \hline
 $L,U$ & lower bound and upper bound of efficiency\\
-\hline
+% \hline
 $\rho$ & efficiency threshold\\
-\hline
+% \hline
 $V$ & The total value\\
-\hline
+% \hline
 $\lambda$ & a system parameter\\
-\hline
+% \hline
 $T_i$ & time stage\\
-\hline
+% \hline
 $f$ & submodular value function\\
 \hline
 \end{tabular}
 \\
-\caption{Notations}
+
 \end{table}
 
 

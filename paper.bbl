@@ -5,7 +5,7 @@ N.~Anari, G.~Goel, and A.~Nikzad.
 \newblock Mechanism design for crowdsourcing: An optimal 1-1/e competitive
   budget-feasible mechanism for large markets.
 \newblock In {\em Foundations of Computer Science (FOCS), 2014 IEEE 55th Annual
-  Symposium on}, Oct 2014.
+  Symposium on}, Philadelphia, PA, USA, Oct 2014.
 
 \bibitem{babaioff2009secretary}
 M.~Babaioff, M.~Dinitz, A.~Gupta, N.~Immorlica, and K.~Talwar.
@@ -13,11 +13,23 @@ M.~Babaioff, M.~Dinitz, A.~Gupta, N.~Immorlica, and K.~Talwar.
 \newblock In {\em Proceedings of the Twentieth Annual ACM-SIAM Symposium on
   Discrete Algorithms}, New York, New York, 2009.
 
+\bibitem{Balkanski:2015:MFA:2764468.2764505}
+E.~Balkanski and Y.~Singer.
+\newblock Mechanisms for fair attribution.
+\newblock In {\em Proceedings of the Sixteenth ACM Conference on Economics and
+  Computation}, Portland, Oregon, USA, June 2015.
+
 \bibitem{Bei:2012:BFM:2213977.2214020}
 X.~Bei, N.~Chen, N.~Gravin, and P.~Lu.
 \newblock Budget feasible mechanism design: From prior-free to bayesian.
 \newblock In {\em Proceedings of the Forty-fourth Annual ACM Symposium on
-  Theory of Computing}, 2012.
+  Theory of Computing}, New York, New York, USA, May 2012.
+
+\bibitem{Chan:2016:BFM:2936924.2936945}
+H.~Chan and J.~Chen.
+\newblock Budget feasible mechanisms for dealers.
+\newblock In {\em Proceedings of the 2016 International Conference on
+  Autonomous Agents and Multiagent Systems}, Singapore, Singapore, May 2016.
 
 \bibitem{chen2011approximability}
 N.~Chen, N.~Gravin, and P.~Lu.
@@ -27,36 +39,104 @@ N.~Chen, N.~Gravin, and P.~Lu.
 \bibitem{Chen:2011:ABF:2133036.2133090}
 N.~Chen, N.~Gravin, and P.~Lu.
 \newblock On the approximability of budget feasible mechanisms.
-\newblock In {\em SODA}, 2011.
+\newblock In {\em Proceedings of the Twenty-second Annual ACM-SIAM Symposium on
+  Discrete Algorithms}, San Francisco, California, January 2011.
+
+\bibitem{Cherian:2015:PPG:2809695.2817881}
+J.~Cherian, J.~Luo, H.~Guo, S.-S. Ho, and R.~Wisbrun.
+\newblock Poster: Parkgauge: Gauging the congestion level of parking garages
+  with crowdsensed parking characteristics.
+\newblock In {\em Proceedings of the 13th ACM Conference on Embedded Networked
+  Sensor Systems}, Seoul, South Korea, November 2015.
+
+\bibitem{Chon:2014:SWP:2632048.2636066}
+Y.~Chon, S.~Kim, S.~Lee, D.~Kim, Y.~Kim, and H.~Cha.
+\newblock Sensing wifi packets in the air: Practicality and implications in
+  urban mobility monitoring.
+\newblock In {\em Proceedings of the 2014 ACM International Joint Conference on
+  Pervasive and Ubiquitous Computing}, Seattle, Washington, September 2014.
+
+\bibitem{Fan:2015:PTT:2789168.2795179}
+Y.~Fan, H.~Sun, and X.~Liu.
+\newblock Poster: Trim: A truthful incentive mechanism for dynamic and
+  heterogeneous tasks in mobile crowdsensing.
+\newblock In {\em MobiCom}, 2015.
 
 \bibitem{Frazier:2014:IE:2600057.2602897}
 P.~Frazier, D.~Kempe, J.~Kleinberg, and R.~Kleinberg.
 \newblock Incentivizing exploration.
 \newblock In {\em Proceedings of the Fifteenth ACM Conference on Economics and
-  Computation}, New York, NY, USA, 2014.
+  Computation}, New York, NY, USA, June 2014.
 
 \bibitem{Fujita:2014:ASA:2615731.2616036}
 K.~Fujita.
 \newblock Automated strategy adaptation for multi-times bilateral closed
   negotiations.
 \newblock In {\em Proceedings of the 2014 International Conference on
-  Autonomous Agents and Multi-agent Systems}, Richland, SC, 2014.
+  Autonomous Agents and Multi-agent Systems}, Richland, SC, May 2014.
+
+\bibitem{Furuhata:2014:COC:2615731.2616027}
+M.~Furuhata, L.~Cohen, S.~Koenig, M.~Dessouky, and F.~Ordonez.
+\newblock Characterizing online cost-sharing mechanisms fordemand responsive
+  transport systems.
+\newblock In {\em Proceedings of the 2014 International Conference on
+  Autonomous Agents and Multi-agent Systems}, Paris, France, May 2014.
 
 \bibitem{ganti2011mobile}
 R.~K. Ganti, F.~Ye, and H.~Lei.
 \newblock Mobile crowdsensing: current state and future challenges.
 \newblock {\em Communications Magazine, IEEE}, 49(11):32--39, 2011.
 
+\bibitem{Goel:2015:PCA:2799630.2757277}
+G.~Goel, V.~Mirrokni, and R.~P. Leme.
+\newblock Polyhedral clinching auctions and the adwords polytope.
+\newblock {\em J. ACM}, 62(3):18:1--18:27, 2015.
+
+\bibitem{Goel:2014:CAB:2600057.2602851}
+G.~Goel, V.~Mirrokni, and R.~Paes~Leme.
+\newblock Clinching auctions beyond hard budget constraints.
+\newblock In {\em Proceedings of the Fifteenth ACM Conference on Economics and
+  Computation}, Palo Alto, California, USA, June 2014.
+
 \bibitem{Hummel:2015:ITI:2736277.2741079}
 P.~Hummel and R.~P. McAfee.
 \newblock When does improved targeting increase revenue?
-\newblock In {\em WWW}, 2015.
+\newblock In {\em Proceedings of the 24th International Conference on World
+  Wide Web}, Florence, Italy, May 2015.
+
+\bibitem{Ji:2016:USB:2971648.2971735}
+S.~Ji, Y.~Zheng, and T.~Li.
+\newblock Urban sensing based on human mobility.
+\newblock In {\em Proceedings of the 2016 ACM International Joint Conference on
+  Pervasive and Ubiquitous Computing}, Heidelberg, Germany, September 2016.
 
 \bibitem{jin2015quality}
 H.~Jin, L.~Su, D.~Chen, K.~Nahrstedt, and J.~Xu.
 \newblock Quality of information aware incentive mechanisms for mobile crowd
   sensing systems.
-\newblock In {\em MobiHoc}, 2015.
+\newblock In {\em Proceedings of the 16th ACM International Symposium on Mobile
+  Ad Hoc Networking and Computing}, Hangzhou, China, June 2015.
+
+\bibitem{Karaliopoulos:2016:FLE:2942358.2942369}
+M.~Karaliopoulos, I.~Koutsopoulos, and M.~Titsias.
+\newblock First learn then earn: Optimizing mobile crowdsensing campaigns
+  through data-driven user profiling.
+\newblock In {\em Proceedings of the 17th ACM International Symposium on Mobile
+  Ad Hoc Networking and Computing}, Paderborn, Germany, July 2016.
+
+\bibitem{Kawajiri:2014:SCI:2632048.2636064}
+R.~Kawajiri, M.~Shimosaka, and H.~Kashima.
+\newblock Steered crowdsensing: Incentive design towards quality-oriented
+  place-centric crowdsensing.
+\newblock In {\em Proceedings of the 2014 ACM International Joint Conference on
+  Pervasive and Ubiquitous Computing}, Seattle, Washington, September 2014.
+
+\bibitem{Kesselheim:2015:SOM:2764468.2764487}
+T.~Kesselheim, R.~Kleinberg, and E.~Tardos.
+\newblock Smooth online mechanisms: A game-theoretic problem in renewable
+  energy markets.
+\newblock In {\em Proceedings of the Sixteenth ACM Conference on Economics and
+  Computation}, Portland, Oregon, USA, June 2015. ACM.
 
 \bibitem{khuller1999budgeted}
 S.~Khuller, A.~Moss, and J.~S. Naor.
@@ -67,27 +147,43 @@ S.~Khuller, A.~Moss, and J.~S. Naor.
 E.~Koukoumidis, L.-S. Peh, and M.~R. Martonosi.
 \newblock Signalguru: leveraging mobile phones for collaborative traffic signal
   schedule advisory.
-\newblock In {\em MobiSys}. ACM, 2011.
+\newblock In {\em Proceedings of the 9th International Conference on Mobile
+  Systems, Applications, and Services}, Bethesda, Maryland, USA, June 2011.
+  ACM.
 
 \bibitem{koutsopoulos2013optimal}
 I.~Koutsopoulos.
 \newblock Optimal incentive-driven design of participatory sensing systems.
-\newblock In {\em INFOCOM}. IEEE, 2013.
+\newblock In {\em INFOCOM, 2013 Proceedings IEEE}, Turin, Italy, April 2013.
+  IEEE.
 
 \bibitem{7037601}
 T.~Kumrai, K.~Ota, M.~Dong, and P.~Champrasert.
 \newblock An incentive-based evolutionary algorithm for participatory sensing.
-\newblock In {\em GLOBECOM}, 2014.
+\newblock In {\em 2014 IEEE Global Communications Conference}, Austin, TX, USA,
+  Dec 2014.
 
 \bibitem{lane2010survey}
 N.~D. Lane, E.~Miluzzo, H.~Lu, D.~Peebles, T.~Choudhury, and A.~T. Campbell.
 \newblock A survey of mobile phone sensing.
 \newblock {\em IEEE Communications magazine}, 48(9):140--150, 2010.
 
+\bibitem{Lee:2016:MRV:2940716.2940745}
+J.~Lee.
+\newblock Mechanisms with referrals: Vcg mechanisms and multilevel mechanisms.
+\newblock In {\em Proceedings of the 2016 ACM Conference on Economics and
+  Computation}, Maastricht, The Netherlands, July 2016.
+
 \bibitem{lee2010dynamic}
 J.-S. Lee and B.~Hoh.
 \newblock Dynamic pricing incentive for participatory sensing.
 \newblock {\em Pervasive and Mobile Computing}, 6(6):693--708, 2010.
+
+\bibitem{Lu:2015:IEG:2764468.2764500}
+P.~Lu and T.~Xiao.
+\newblock Improved efficiency guarantees in auctions with budgets.
+\newblock In {\em Proceedings of the Sixteenth ACM Conference on Economics and
+  Computation}, Portland, Oregon, USA, June 2015.
 
 \bibitem{maisonneuve2009noisetube}
 N.~Maisonneuve, M.~Stevens, M.~E. Niessen, and L.~Steels.
@@ -100,6 +196,12 @@ S.~Mathur, T.~Jin, N.~Kasturirangan, J.~Chandrasekaran, W.~Xue, M.~Gruteser,
   and W.~Trappe.
 \newblock Parknet: drive-by sensing of road-side parking statistics.
 \newblock In {\em MobiSys}. ACM, 2010.
+
+\bibitem{Naroditskiy:2013:ROM:2484920.2485023}
+V.~Naroditskiy, S.~Ceppi, V.~Robu, and N.~R. Jennings.
+\newblock Redistribution in online mechanisms.
+\newblock In {\em Proceedings of the 2013 International Conference on
+  Autonomous Agents and Multi-agent Systems}, St. Paul, MN, USA, May 2013.
 
 \bibitem{nisan2007algorithmic}
 N.~Nisan, T.~Roughgarden, E.~Tardos, and V.~V. Vazirani.
@@ -121,12 +223,14 @@ S.~Olariu, S.~Mohrehkesh, X.~Wang, and M.~C. Weigle.
 D.~Peng, F.~Wu, and G.~Chen.
 \newblock Pay as how well you do: A quality based incentive mechanism for
   crowdsensing.
-\newblock In {\em MobiHoc}, 2015.
+\newblock In {\em Proceedings of the 16th ACM International Symposium on Mobile
+  Ad Hoc Networking and Computing}, Hangzhou, China, June 2015.
 
 \bibitem{rana2010ear}
 R.~K. Rana, C.~T. Chou, S.~S. Kanhere, N.~Bulusu, and W.~Hu.
 \newblock Ear-phone: an end-to-end participatory urban noise mapping system.
-\newblock In {\em IPSN}, 2010.
+\newblock In {\em Proceedings of the 9th ACM/IEEE International Conference on
+  Information Processing in Sensor Networks}, Stockholm, Sweden, April 2010.
 
 \bibitem{rasmussen1975choosing}
 W.~T. Rasmussen and S.~R. Pliska.
@@ -137,27 +241,32 @@ W.~T. Rasmussen and S.~R. Pliska.
 W.~Shi, L.~Zhang, C.~Wu, Z.~Li, and F.~C. Lau.
 \newblock An online auction framework for dynamic resource provisioning in
   cloud computing.
-\newblock In {\em SIGMETRICS}, 2014.
+\newblock In {\em The 2014 ACM International Conference on Measurement and
+  Modeling of Computer Systems}, Austin, Texas, USA, June 2014.
 
 \bibitem{singer2010budget}
 Y.~Singer.
 \newblock Budget feasible mechanisms.
-\newblock In {\em FOCS}, 2010.
+\newblock In {\em Foundations of Computer Science (FOCS), 2010 51st Annual IEEE
+  Symposium on}, Las Vegas, Nevada, USA, Oct 2010.
 
 \bibitem{singer2013pricing}
 Y.~Singer and M.~Mittal.
 \newblock Pricing mechanisms for crowdsourcing markets.
-\newblock In {\em WWW}, 2013.
+\newblock In {\em Proceedings of the 22Nd International Conference on World
+  Wide Web}, Rio de Janeiro, Brazil, May 2013.
 
 \bibitem{wang2013crowdatlas}
 Y.~Wang, X.~Liu, H.~Wei, G.~Forman, C.~Chen, and Y.~Zhu.
 \newblock Crowdatlas: self-updating maps for cloud and personal use.
-\newblock In {\em MobiSys}, 2013.
+\newblock In {\em Proceeding of the 11th Annual International Conference on
+  Mobile Systems, Applications, and Services}, Taipei, Taiwan, June 2013.
 
 \bibitem{wu2014strategy}
 F.~Wu, J.~Liu, Z.~Zheng, and G.~Chen.
 \newblock A strategy-proof online auction with time discounting values.
-\newblock In {\em AAAI}, 2014.
+\newblock In {\em Proceedings of the Twenty-Ninth AAAI Conference on Artificial
+  Intelligence}, Quebec City, QC, CA, July 2014.
 
 \bibitem{yan2011crowdpark}
 T.~Yan, B.~Hoh, D.~Ganesan, K.~Tracton, T.~Iwuchukwu, and J.-S. Lee.
@@ -169,7 +278,16 @@ T.~Yan, B.~Hoh, D.~Ganesan, K.~Tracton, T.~Iwuchukwu, and J.-S. Lee.
 D.~Yang, G.~Xue, X.~Fang, and J.~Tang.
 \newblock Crowdsourcing to smartphones: incentive mechanism design for mobile
   phone sensing.
-\newblock In {\em MobiCom}. ACM, 2012.
+\newblock In {\em Proceedings of the 18th Annual International Conference on
+  Mobile Computing and Networking}, Istanbul, Turkey, August 2012. ACM.
+
+\bibitem{Zappatore:2016:CAM:2851613.2851699}
+M.~Zappatore, A.~Longo, M.~A. Bochicchio, D.~Zappatore, A.~A. Morrone, and
+  G.~De~Mitri.
+\newblock A crowdsensing approach for mobile learning in acoustics and noise
+  monitoring.
+\newblock In {\em Proceedings of the 31st Annual ACM Symposium on Applied
+  Computing}, Pisa, Italy, April 2016.
 
 \bibitem{Zhang:2015:OAI:2796314.2745855}
 X.~Zhang, Z.~Huang, C.~Wu, Z.~Li, and F.~C. Lau.
@@ -181,6 +299,13 @@ X.~Zhang, Z.~Huang, C.~Wu, Z.~Li, and F.~C. Lau.
 D.~Zhao, X.-Y. Li, and H.~Ma.
 \newblock How to crowdsource tasks truthfully without sacrificing utility:
   Online incentive mechanisms with budget constraint.
-\newblock In {\em INFOCOM}, 2014.
+\newblock In {\em IEEE INFOCOM 2014 - IEEE Conference on Computer
+  Communications}, Toronto, Canada, April 2014.
+
+\bibitem{Zhao:2016:BOI:3001647.3001648}
+D.~Zhao, X.-Y. Li, and H.~Ma.
+\newblock Budget-feasible online incentive mechanisms for crowdsourcing tasks
+  truthfully.
+\newblock {\em IEEE/ACM Trans. Netw.}, 24(2):647--661, 2016.
 
 \end{thebibliography}
