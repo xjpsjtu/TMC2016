@@ -4,17 +4,20 @@
 N.~Anari, G.~Goel, and A.~Nikzad.
 \newblock Mechanism design for crowdsourcing: An optimal 1-1/e competitive
   budget-feasible mechanism for large markets.
-\newblock In {\em FOCS}, 2014.
+\newblock In {\em Foundations of Computer Science (FOCS), 2014 IEEE 55th Annual
+  Symposium on}, Oct 2014.
 
 \bibitem{babaioff2009secretary}
 M.~Babaioff, M.~Dinitz, A.~Gupta, N.~Immorlica, and K.~Talwar.
 \newblock Secretary problems: weights and discounts.
-\newblock In {\em SODA}, 2009.
+\newblock In {\em Proceedings of the Twentieth Annual ACM-SIAM Symposium on
+  Discrete Algorithms}, New York, New York, 2009.
 
 \bibitem{Bei:2012:BFM:2213977.2214020}
 X.~Bei, N.~Chen, N.~Gravin, and P.~Lu.
 \newblock Budget feasible mechanism design: From prior-free to bayesian.
-\newblock In {\em STOC}, 2012.
+\newblock In {\em Proceedings of the Forty-fourth Annual ACM Symposium on
+  Theory of Computing}, 2012.
 
 \bibitem{chen2011approximability}
 N.~Chen, N.~Gravin, and P.~Lu.
