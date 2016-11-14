@@ -98,6 +98,12 @@ G.~Goel, V.~Mirrokni, and R.~Paes~Leme.
 \newblock In {\em Proceedings of the Fifteenth ACM Conference on Economics and
   Computation}, Palo Alto, California, USA, June 2014.
 
+\bibitem{Han:2016:PPR:2942358.2942385}
+K.~Han, H.~Huang, and J.~Luo.
+\newblock Posted pricing for robust crowdsensing.
+\newblock In {\em Proceedings of the 17th ACM International Symposium on Mobile
+  Ad Hoc Networking and Computing}, Paderborn, Germany, July 2016.
+
 \bibitem{Hummel:2015:ITI:2736277.2741079}
 P.~Hummel and R.~P. McAfee.
 \newblock When does improved targeting increase revenue?
@@ -255,6 +261,13 @@ Y.~Singer and M.~Mittal.
 \newblock Pricing mechanisms for crowdsourcing markets.
 \newblock In {\em Proceedings of the 22Nd International Conference on World
   Wide Web}, Rio de Janeiro, Brazil, May 2013.
+
+\bibitem{Wang:2015:CQO:2750858.2807513}
+L.~Wang, D.~Zhang, A.~Pathak, C.~Chen, H.~Xiong, D.~Yang, and Y.~Wang.
+\newblock Ccs-ta: Quality-guaranteed online task allocation in compressive
+  crowdsensing.
+\newblock In {\em Proceedings of the 2015 ACM International Joint Conference on
+  Pervasive and Ubiquitous Computing}, Osaka, Japan, September 2015.
 
 \bibitem{wang2013crowdatlas}
 Y.~Wang, X.~Liu, H.~Wei, G.~Forman, C.~Chen, and Y.~Zhu.
