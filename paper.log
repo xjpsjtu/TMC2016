@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2016.5.11)  14 NOV 2016 21:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2016.5.11)  15 NOV 2016 22:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -674,20 +674,20 @@ Before submitting the final camera ready copy, remember to:
  process uses the appropriate paper size.
 
 - LAST -
-Extra skip:9.0pt
-Left:30.0pt/1.73193pt
-Right:21.0pt/1.41992pt
-Output:30.0pt
+Extra skip:0.0pt
+Left:75.0pt/1.73193pt
+Right:75.0pt/1.41992pt
+Output:75.0pt
 [13] (./paper.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7247 strings out of 493117
- 105657 string characters out of 6138984
- 215123 words of memory out of 5000000
- 10562 multiletter control sequences out of 15000+600000
+ 7250 strings out of 493117
+ 105708 string characters out of 6138984
+ 216135 words of memory out of 5000000
+ 10565 multiletter control sequences out of 15000+600000
  52942 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,22n,32p,1846b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -717,7 +717,7 @@ sbm10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5
 exmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2014/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on paper.pdf (13 pages, 494814 bytes).
+Output written on paper.pdf (13 pages, 496112 bytes).
 PDF statistics:
  220 PDF objects out of 1000 (max. 8388607)
  151 compressed objects within 2 object streams

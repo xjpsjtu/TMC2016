@@ -87,6 +87,11 @@ R.~K. Ganti, F.~Ye, and H.~Lei.
 \newblock Mobile crowdsensing: current state and future challenges.
 \newblock {\em Communications Magazine, IEEE}, 49(11):32--39, 2011.
 
+\bibitem{6069707}
+R.~K. Ganti, F.~Ye, and H.~Lei.
+\newblock Mobile crowdsensing: current state and future challenges.
+\newblock {\em IEEE Communications Magazine}, 49(11):32--39, 2011.
+
 \bibitem{Goel:2015:PCA:2799630.2757277}
 G.~Goel, V.~Mirrokni, and R.~P. Leme.
 \newblock Polyhedral clinching auctions and the adwords polytope.
@@ -243,6 +248,13 @@ W.~T. Rasmussen and S.~R. Pliska.
 \newblock Choosing the maximum from a sequence with a discount function.
 \newblock {\em Applied Mathematics and Optimization}, 2(3):279--289, 1975.
 
+\bibitem{6341381}
+W.~Sherchan, P.~P. Jayaraman, S.~Krishnaswamy, A.~Zaslavsky, S.~Loke, and
+  A.~Sinha.
+\newblock Using on-the-move mining for mobile crowdsensing.
+\newblock In {\em 2012 IEEE 13th International Conference on Mobile Data
+  Management}, pages 115--124, Bangalore, India, July 2012.
+
 \bibitem{Shi:2014:OAF:2591971.2591980}
 W.~Shi, L.~Zhang, C.~Wu, Z.~Li, and F.~C. Lau.
 \newblock An online auction framework for dynamic resource provisioning in
@@ -261,6 +273,13 @@ Y.~Singer and M.~Mittal.
 \newblock Pricing mechanisms for crowdsourcing markets.
 \newblock In {\em Proceedings of the 22Nd International Conference on World
   Wide Web}, Rio de Janeiro, Brazil, May 2013.
+
+\bibitem{Tuncay:2013:PRD:2500423.2504573}
+G.~S. Tuncay, G.~Benincasa, and A.~Helmy.
+\newblock Participant recruitment and data collection framework for
+  opportunistic sensing: A comparative analysis.
+\newblock In {\em Proceedings of the 19th Annual International Conference on
+  Mobile Computing \&\#38; Networking}, September 2013.
 
 \bibitem{Wang:2015:CQO:2750858.2807513}
 L.~Wang, D.~Zhang, A.~Pathak, C.~Chen, H.~Xiong, D.~Yang, and Y.~Wang.

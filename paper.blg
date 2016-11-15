@@ -11,45 +11,45 @@ Repeated entry---line 1175 of file paper.bib
  : @inproceedings{Fan:2015:PTT:2789168.2795179
  :                                            ,
 I'm skipping whatever remains of this entry
-You've used 52 entries,
+You've used 55 entries,
             2118 wiz_defined-function locations,
-            796 strings with 15601 characters,
-and the built_in function-call counts, 17528 in all, are:
-= -- 1606
-> -- 1082
-< -- 1
-+ -- 430
-- -- 372
-* -- 1278
-:= -- 3025
-add.period$ -- 161
-call.type$ -- 52
-change.case$ -- 341
+            811 strings with 16224 characters,
+and the built_in function-call counts, 18739 in all, are:
+= -- 1718
+> -- 1151
+< -- 2
++ -- 457
+- -- 396
+* -- 1369
+:= -- 3220
+add.period$ -- 170
+call.type$ -- 55
+change.case$ -- 362
 chr.to.int$ -- 0
-cite$ -- 52
-duplicate$ -- 701
-empty$ -- 1357
-format.name$ -- 372
-if$ -- 3614
+cite$ -- 55
+duplicate$ -- 749
+empty$ -- 1449
+format.name$ -- 396
+if$ -- 3874
 int.to.chr$ -- 0
-int.to.str$ -- 52
-missing$ -- 53
-newline$ -- 263
-num.names$ -- 104
-pop$ -- 484
+int.to.str$ -- 55
+missing$ -- 56
+newline$ -- 278
+num.names$ -- 110
+pop$ -- 510
 preamble$ -- 1
-purify$ -- 290
+purify$ -- 308
 quote$ -- 0
-skip$ -- 308
+skip$ -- 340
 stack$ -- 0
-substring$ -- 505
-swap$ -- 65
-text.length$ -- 1
+substring$ -- 563
+swap$ -- 78
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 206
+type$ -- 218
 warning$ -- 0
-while$ -- 125
-width$ -- 54
-write$ -- 573
+while$ -- 134
+width$ -- 57
+write$ -- 606
 (There were 2 error messages)
