@@ -627,7 +627,37 @@ Most parameters have been explained after algorithm 1, so we just make some supp
 Next we propose the participant selection algorithm as before. We should pay more attention to the truthfulness. Since the value function is submodular, the marginal distribution is related to a given subset. If the order of selection is changed, the marginal distribution will change as well. This is a new kind of opportunity for the participants to cheat her bids. Singer has ever studied a budget mechanism~\cite{singer2010budget}, where the value function is submodular. However it is used in offline scenario, we will give an online version.
 
 
-\begin{algorithm}
+
+
+\subsection{Mechanism Analysis}
+\begin{theorem}
+The mechanism with submodular value function is computationally efficient and budget feasible.
+\end{theorem}
+\begin{proof}
+The proof is similar to the proof of theorem 2 and theorem 4.
+\end{proof}
+\begin{theorem}
+The mechanism with submodular value function is time-truthful.
+\end{theorem}
+\begin{proof}
+We prove that a participant can not obtain higher utility by misreporting her arrival or departure time. Denote her true arrival and departure time is $a_i, d_i$ and the misreporting time is $\hat{a}_i$ and $\hat{d}_i$. Fix the bids of all participants but $i$, we consider two cases.
+
+\textbf{case 1}:If she can win the auction at time $t$ when she proposes her true type. If $\hat{a}_i\le t$, she won't get more payment because she cannot win the until $t$. If $\hat{a}_i>t$, assume she will win the auction at $\hat{t}$. Assume $t$ and $\hat{t}$ belongs to stage $[T_a,T_{a-1}]$ and $[T_b,T_{b-1}]$ respectively and the corresponding threshold is $\rho_a=GetThrshold(B_a, T_a, \mathbb{S'}_a)$ and $\rho_b=GetThreshold(B_b,T_b,\mathbb{S'}_b)$. Assume the set $\mathbb{D}$ in Algorithm 4 is $\mathbb{D}^a$ and $\mathbb{D}^b$, so
+$\rho_a=\frac{1}{\lambda}\frac{f(\mathbb{D}^{a})}{\sum_{i\in\mathbb{D}^{a}}b_i}\left(\frac{U}{L}\right)^{l-a}$ and $\rho_b=\frac{1}{\lambda}\frac{f(\mathbb{D}^{b})}{\sum_{i\in\mathbb{D}^{b}}b_i}\left(\frac{U}{L}\right)^{l-b}$. Hence:
+
+\begin{align}
+\frac{P_a}{P_b}&=\frac{\tilde{f}^i_t(\mathbb{S}_a)}{\tilde{f}^i_{t'}(\mathbb{S}_b)}\frac{\rho_b}{\rho_a} \notag \\
+&=\frac{(f(\mathbb{S}_a\cup\{i\})-\mathbb{S}_a)\beta^{-t}}{(f(\mathbb{S}_b\cup\{i\})-\mathbb{S}_b)\beta^{-t'}}\frac{\rho_b}{\rho_a}\notag \\
+&=\frac{(f(\mathbb{S}_a\cup\{i\})-\mathbb{S}_a)\beta^{-t}}{(f(\mathbb{S}_b\cup\{i\})-\mathbb{S}_b)\beta^{-t'}}\frac{\frac{1}{\lambda}\frac{f(\mathbb{D}^{a})}{\sum_{i\in\mathbb{D}^{a}}b_i}\left(\frac{U}{L}\right)^{l-a}}{\frac{1}{\lambda}\frac{f(\mathbb{D}^{b})}{\sum_{i\in\mathbb{D}^{b}}b_i}\left(\frac{U}{L}\right)^{l-b}} \notag \\
+&\ge 1 \cdot \beta^{t'-t}\frac{L}{U}  \cdot \left(\frac{U}{L}\right)^{a-b}\notag \\
+&\ge 1 \notag
+\end{align}
+The inequality $f(\mathbb{S}_a\cup\{i\})-\mathbb{S}_a) \ge f(\mathbb{S}_b\cup\{i\})-\mathbb{S}_b)$ is due to the submodularity of function $f$. This indicates that the participant can't obtaining higher utility by misreporting her arrival time. The analysis on departure time similar.
+
+\textbf{case 2}: In this case, this participant can not win the auction any time. She will not win the auction by misreporting her time because in her present period, her low efficiency always makes her lose the auction.
+\end{proof}
+
+\begin{algorithm}[!hb]
 \BlankLine
 \SetKwInOut{Input}{Input}
 \SetKwInOut{Output}{Output}
@@ -671,34 +701,6 @@ $B^{'} \gets \frac{1}{2^{l}}B, \mathbb{S}\leftarrow\varnothing, \mathbb{S}'\left
   }
 \end{small}
 \end{algorithm}
-
-\subsection{Mechanism Analysis}
-\begin{theorem}
-The mechanism with submodular value function is computationally efficient and budget feasible.
-\end{theorem}
-\begin{proof}
-The proof is similar to the proof of theorem 2 and theorem 4.
-\end{proof}
-\begin{theorem}
-The mechanism with submodular value function is time-truthful.
-\end{theorem}
-\begin{proof}
-We prove that a participant can not obtain higher utility by misreporting her arrival or departure time. Denote her true arrival and departure time is $a_i, d_i$ and the misreporting time is $\hat{a}_i$ and $\hat{d}_i$. Fix the bids of all participants but $i$, we consider two cases.
-
-\textbf{case 1}:If she can win the auction at time $t$ when she proposes her true type. If $\hat{a}_i\le t$, she won't get more payment because she cannot win the until $t$. If $\hat{a}_i>t$, assume she will win the auction at $\hat{t}$. Assume $t$ and $\hat{t}$ belongs to stage $[T_a,T_{a-1}]$ and $[T_b,T_{b-1}]$ respectively and the corresponding threshold is $\rho_a=GetThrshold(B_a, T_a, \mathbb{S'}_a)$ and $\rho_b=GetThreshold(B_b,T_b,\mathbb{S'}_b)$. Assume the set $\mathbb{D}$ in Algorithm 4 is $\mathbb{D}^a$ and $\mathbb{D}^b$, so
-$\rho_a=\frac{1}{\lambda}\frac{f(\mathbb{D}^{a})}{\sum_{i\in\mathbb{D}^{a}}b_i}\left(\frac{U}{L}\right)^{l-a}$ and $\rho_b=\frac{1}{\lambda}\frac{f(\mathbb{D}^{b})}{\sum_{i\in\mathbb{D}^{b}}b_i}\left(\frac{U}{L}\right)^{l-b}$. Hence:
-
-\begin{align}
-\frac{P_a}{P_b}&=\frac{\tilde{f}^i_t(\mathbb{S}_a)}{\tilde{f}^i_{t'}(\mathbb{S}_b)}\frac{\rho_b}{\rho_a} \notag \\
-&=\frac{(f(\mathbb{S}_a\cup\{i\})-\mathbb{S}_a)\beta^{-t}}{(f(\mathbb{S}_b\cup\{i\})-\mathbb{S}_b)\beta^{-t'}}\frac{\rho_b}{\rho_a}\notag \\
-&=\frac{(f(\mathbb{S}_a\cup\{i\})-\mathbb{S}_a)\beta^{-t}}{(f(\mathbb{S}_b\cup\{i\})-\mathbb{S}_b)\beta^{-t'}}\frac{\frac{1}{\lambda}\frac{f(\mathbb{D}^{a})}{\sum_{i\in\mathbb{D}^{a}}b_i}\left(\frac{U}{L}\right)^{l-a}}{\frac{1}{\lambda}\frac{f(\mathbb{D}^{b})}{\sum_{i\in\mathbb{D}^{b}}b_i}\left(\frac{U}{L}\right)^{l-b}} \notag \\
-&\ge 1 \cdot \beta^{t'-t}\frac{L}{U}  \cdot \left(\frac{U}{L}\right)^{a-b}\notag \\
-&\ge 1 \notag
-\end{align}
-The inequality $f(\mathbb{S}_a\cup\{i\})-\mathbb{S}_a) \ge f(\mathbb{S}_b\cup\{i\})-\mathbb{S}_b)$ is due to the submodularity of function $f$. This indicates that the participant can't obtaining higher utility by misreporting her arrival time. The analysis on departure time similar.
-
-\textbf{case 2}: In this case, this participant can not win the auction any time. She will not win the auction by misreporting her time because in her present period, her low efficiency always makes her lose the auction.
-\end{proof}
 
 \begin{theorem}
 The mechanism with submodular value function is cost-truthful
@@ -812,8 +814,49 @@ We then find the effect of the system parameter $\lambda$ on the total value, wi
 In Fig. $3(a)$ and Fig. $3(b)$, we intend to investigate the effect of the system parameter $\lambda$. According to inequality $(9)$, $\lambda$ has an upper bound $\lambda_{max}= \frac{1}{\epsilon}\left(\frac{U}{L}\right)^{l-2}$ and a lower bound $\lambda_{min}=2\left(\frac{U}{L}\right)^{l-1}$, but we don't know how to choose $\lambda$ to maximize the value (even though we can  guarantee a constant competitive ratio). We divide the interval $[\lambda_{min}, \lambda_{max})$ into 100 pieces. We should also consider the effect of different budgets and participants. These two figures show us that with  $\lambda$ getting closer to $\lambda_{min}$, the value is getting higher regardless of the different budgets and participant numbers. This is because when $\lambda$ gets smaller, the threshold gets larger and the total value increases as well. The premise of this phenomenon is the huge number of participants. Considering that there are rare participants competing in this auction, if the threshold is large, some participants will be selected later. The total value will decrease due to the time-discounting property. When there are plentiful participants, the participants with less efficiency will lose and never be selected. In addition, we can also see the competitive ratio in expression $(8)$ has a negative correlation with $\lambda$.
 %% The file named.bst is a bibliography style file for BibTeX 0.99c
 \subsection{Select Ratio}
+In Fig.4(a) and Fig.4(b), we intend to investigate the selected ratio with various numbers of participants and budget respectively. We first vary the budget from 6000 to 15000, with different numbers of participants. As shown in Fig.4(a), the selected ratio increases when the budget gets higher. We can also see that with a fixed budget, the selected ratio decrease with the number of participants. It may be because of the marginal effect. In Fig.4(b), the marginal effect is shown more significant. We infer that when the number of participants gets larger, the budget may be not enough to pay for them. 
+\begin{figure}[!t]
+  \centering
+  \subfigure[Different budgets]{
+  \begin{minipage}[b]{0.5\textwidth}
+  	\centering
+    \includegraphics[width=0.7\textwidth]{RatioBudget.eps}
+    \label{fig:gender_trend}
+    \end{minipage}
+  }
+  \subfigure[Different numbers of participants]{
+  \begin{minipage}[b]{0.5\textwidth}
+  \centering
+    \includegraphics[width=0.7\textwidth]{AgentRatio.eps}
+    \label{fig:education_trend}
+    \end{minipage}
+  }
+  \vspace{-0.2cm}
+  \caption{Select Ratio}
+  \vspace{-0.2cm}
+\end{figure}
 \subsection{Budget Utilization}
-
+We also intend to find the utilization of budget in our experiment. With the similar setup, the number of participants is varying from 200 to 800 and the budget is varying from 6000 to 15000. In Fig.5(a), it is shown that for a fixed number of participants, the utilization of budget is decreasing with more budget. And with a fixed budget, the utilization increases with the number of participants, which is commonsensible. In Fig.5(b), the marginal effect of utilization of budget is evident. It inspire that for an crowdsensing application with fixed registered participants, adding more budget may not bring more utility for the reason of marginal effect. This result is consistent with the result found in Fig.2(a).
+\begin{figure}[!t]
+  \centering
+  \subfigure[Different budgets]{
+  \begin{minipage}[b]{0.5\textwidth}
+  	\centering
+    \includegraphics[width=0.7\textwidth]{UtiBudget.eps}
+    \label{fig:gender_trend}
+    \end{minipage}
+  }
+  \subfigure[Different numbers of participants]{
+  \begin{minipage}[b]{0.5\textwidth}
+  \centering
+    \includegraphics[width=0.7\textwidth]{AgentUti.eps}
+    \label{fig:education_trend}
+    \end{minipage}
+  }
+  \vspace{-0.2cm}
+  \caption{Budget Utilization}
+  \vspace{-0.2cm}
+\end{figure}
 
 
 

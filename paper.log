@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2016.5.11)  15 NOV 2016 22:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2016.5.11)  20 NOV 2016 11:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -482,6 +482,30 @@ LaTeX Warning: Label `fig:education_trend' multiply defined.
 
 LaTeX Warning: Label `sub@fig:education_trend' multiply defined.
 
+
+LaTeX Warning: Label `fig:gender_trend' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:gender_trend' multiply defined.
+
+
+LaTeX Warning: Label `fig:education_trend' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:education_trend' multiply defined.
+
+
+LaTeX Warning: Label `fig:gender_trend' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:gender_trend' multiply defined.
+
+
+LaTeX Warning: Label `fig:education_trend' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:education_trend' multiply defined.
+
 )
 \openout1 = `paper.aux'.
 
@@ -561,11 +585,8 @@ S[]$ \OT1/ptm/m/n/10 is
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 522.
 
-[7] [8]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9]
-Underfull \hbox (badness 2418) in paragraph at lines 743--744
+[7] [8] [9]
+Underfull \hbox (badness 2418) in paragraph at lines 745--746
 []\OT1/ptm/m/n/10 In line 7 in the al-go-rithm 4, the thresh-old is de-
  []
 
@@ -577,17 +598,17 @@ Package epstopdf Info: Source file: <BudgetChangeV.eps>
 (epstopdf)                    size: 9272 bytes
 (epstopdf)             Command: <repstopdf --outfile=BudgetChangeV-eps-converte
 d-to.pdf BudgetChangeV.eps>
-(epstopdf)             \includegraphics on input line 772.
+(epstopdf)             \includegraphics on input line 774.
 Package epstopdf Info: Output file is already uptodate.
 <BudgetChangeV-eps-converted-to.pdf, id=76, 361.35pt x 252.945pt>
 File: BudgetChangeV-eps-converted-to.pdf Graphic file (type pdf)
 
 <use BudgetChangeV-eps-converted-to.pdf>
 Package pdftex.def Info: BudgetChangeV-eps-converted-to.pdf used on input line 
-772.
+774.
 (pdftex.def)             Requested size: 180.59921pt x 126.41815pt.
 
-Overfull \hbox (13.00012pt too wide) in paragraph at lines 772--773
+Overfull \hbox (13.00012pt too wide) in paragraph at lines 774--775
 [][] 
  []
 
@@ -599,17 +620,17 @@ Package epstopdf Info: Source file: <AgentChangeV.eps>
 (epstopdf)                    size: 9327 bytes
 (epstopdf)             Command: <repstopdf --outfile=AgentChangeV-eps-converted
 -to.pdf AgentChangeV.eps>
-(epstopdf)             \includegraphics on input line 781.
+(epstopdf)             \includegraphics on input line 783.
 Package epstopdf Info: Output file is already uptodate.
 <AgentChangeV-eps-converted-to.pdf, id=77, 361.35pt x 252.945pt>
 File: AgentChangeV-eps-converted-to.pdf Graphic file (type pdf)
 
 <use AgentChangeV-eps-converted-to.pdf>
 Package pdftex.def Info: AgentChangeV-eps-converted-to.pdf used on input line 7
-81.
+83.
 (pdftex.def)             Requested size: 180.59921pt x 126.41815pt.
 
-Overfull \hbox (13.00012pt too wide) in paragraph at lines 781--783
+Overfull \hbox (13.00012pt too wide) in paragraph at lines 783--785
 [][]
  []
 
@@ -623,14 +644,14 @@ Package epstopdf Info: Source file: <BudgetLambda.eps>
 (epstopdf)                    size: 8039 bytes
 (epstopdf)             Command: <repstopdf --outfile=BudgetLambda-eps-converted
 -to.pdf BudgetLambda.eps>
-(epstopdf)             \includegraphics on input line 798.
+(epstopdf)             \includegraphics on input line 800.
 Package epstopdf Info: Output file is already uptodate.
  <BudgetLambda-eps-converted-to.pdf, id=98, 361.35pt x 252.945pt>
 File: BudgetLambda-eps-converted-to.pdf Graphic file (type pdf)
 
 <use BudgetLambda-eps-converted-to.pdf>
-Package pdftex.def Info: BudgetLambda-eps-converted-to.pdf used on input line 7
-98.
+Package pdftex.def Info: BudgetLambda-eps-converted-to.pdf used on input line 8
+00.
 (pdftex.def)             Requested size: 180.59921pt x 126.41815pt.
 Package epstopdf Info: Source file: <AgentLambda.eps>
 (epstopdf)                    date: 2016-11-08 08:48:19
@@ -640,7 +661,7 @@ Package epstopdf Info: Source file: <AgentLambda.eps>
 (epstopdf)                    size: 8925 bytes
 (epstopdf)             Command: <repstopdf --outfile=AgentLambda-eps-converted-
 to.pdf AgentLambda.eps>
-(epstopdf)             \includegraphics on input line 805.
+(epstopdf)             \includegraphics on input line 807.
 Package epstopdf Info: Output file is already uptodate.
 
 <AgentLambda-eps-converted-to.pdf, id=99, 361.35pt x 252.945pt>
@@ -648,20 +669,115 @@ File: AgentLambda-eps-converted-to.pdf Graphic file (type pdf)
 
 <use AgentLambda-eps-converted-to.pdf>
 Package pdftex.def Info: AgentLambda-eps-converted-to.pdf used on input line 80
-5.
+7.
 (pdftex.def)             Requested size: 180.59921pt x 126.41815pt.
 
-Overfull \hbox (13.00012pt too wide) in paragraph at lines 798--807
+Overfull \hbox (13.00012pt too wide) in paragraph at lines 800--809
  [][] 
  []
 
 
-Overfull \hbox (13.00012pt too wide) in paragraph at lines 798--807
+Overfull \hbox (13.00012pt too wide) in paragraph at lines 800--809
  [] 
  []
 
-(./paper.bbl [11 <./BudgetLambda-eps-converted-to.pdf> <./AgentLambda-eps-conve
-rted-to.pdf>] [12])
+Package epstopdf Info: Source file: <RatioBudget.eps>
+(epstopdf)                    date: 2016-11-16 22:01:43
+(epstopdf)                    size: 50577 bytes
+(epstopdf)             Output file: <RatioBudget-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-17 21:10:12
+(epstopdf)                    size: 15697 bytes
+(epstopdf)             Command: <repstopdf --outfile=RatioBudget-eps-converted-
+to.pdf RatioBudget.eps>
+(epstopdf)             \includegraphics on input line 826.
+Package epstopdf Info: Output file is already uptodate.
+<RatioBudget-eps-converted-to.pdf, id=100, 361.35pt x 289.08pt>
+File: RatioBudget-eps-converted-to.pdf Graphic file (type pdf)
+
+<use RatioBudget-eps-converted-to.pdf>
+Package pdftex.def Info: RatioBudget-eps-converted-to.pdf used on input line 82
+6.
+(pdftex.def)             Requested size: 180.59921pt x 144.47787pt.
+Package epstopdf Info: Source file: <AgentRatio.eps>
+(epstopdf)                    date: 2016-11-16 22:02:24
+(epstopdf)                    size: 78257 bytes
+(epstopdf)             Output file: <AgentRatio-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-17 21:10:14
+(epstopdf)                    size: 19982 bytes
+(epstopdf)             Command: <repstopdf --outfile=AgentRatio-eps-converted-t
+o.pdf AgentRatio.eps>
+(epstopdf)             \includegraphics on input line 833.
+Package epstopdf Info: Output file is already uptodate.
+
+<AgentRatio-eps-converted-to.pdf, id=101, 361.35pt x 289.08pt>
+File: AgentRatio-eps-converted-to.pdf Graphic file (type pdf)
+
+<use AgentRatio-eps-converted-to.pdf>
+Package pdftex.def Info: AgentRatio-eps-converted-to.pdf used on input line 833
+.
+(pdftex.def)             Requested size: 180.59921pt x 144.47787pt.
+
+Overfull \hbox (13.00012pt too wide) in paragraph at lines 826--835
+ [][] 
+ []
+
+
+Overfull \hbox (13.00012pt too wide) in paragraph at lines 826--835
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package epstopdf Info: Source file: <UtiBudget.eps>
+(epstopdf)                    date: 2016-11-17 21:40:37
+(epstopdf)                    size: 50119 bytes
+(epstopdf)             Output file: <UtiBudget-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-17 21:40:58
+(epstopdf)                    size: 15378 bytes
+(epstopdf)             Command: <repstopdf --outfile=UtiBudget-eps-converted-to
+.pdf UtiBudget.eps>
+(epstopdf)             \includegraphics on input line 848.
+Package epstopdf Info: Output file is already uptodate.
+
+<UtiBudget-eps-converted-to.pdf, id=102, 361.35pt x 289.08pt>
+File: UtiBudget-eps-converted-to.pdf Graphic file (type pdf)
+
+<use UtiBudget-eps-converted-to.pdf>
+Package pdftex.def Info: UtiBudget-eps-converted-to.pdf used on input line 848.
+
+(pdftex.def)             Requested size: 180.59921pt x 144.47787pt.
+Package epstopdf Info: Source file: <AgentUti.eps>
+(epstopdf)                    date: 2016-11-17 20:35:41
+(epstopdf)                    size: 72589 bytes
+(epstopdf)             Output file: <AgentUti-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-11-17 21:10:17
+(epstopdf)                    size: 18602 bytes
+(epstopdf)             Command: <repstopdf --outfile=AgentUti-eps-converted-to.
+pdf AgentUti.eps>
+(epstopdf)             \includegraphics on input line 855.
+Package epstopdf Info: Output file is already uptodate.
+
+<AgentUti-eps-converted-to.pdf, id=103, 361.35pt x 289.08pt>
+File: AgentUti-eps-converted-to.pdf Graphic file (type pdf)
+
+<use AgentUti-eps-converted-to.pdf>
+Package pdftex.def Info: AgentUti-eps-converted-to.pdf used on input line 855.
+(pdftex.def)             Requested size: 180.59921pt x 144.47787pt.
+
+Overfull \hbox (13.00012pt too wide) in paragraph at lines 848--857
+ [][] 
+ []
+
+
+Overfull \hbox (13.00012pt too wide) in paragraph at lines 848--857
+ [] 
+ []
+
+[11 <./BudgetLambda-eps-converted-to.pdf> <./AgentLambda-eps-converted-to.pdf> 
+<./RatioBudget-eps-converted-to.pdf> <./AgentRatio-eps-converted-to.pdf>]
+(./paper.bbl [12 <./UtiBudget-eps-converted-to.pdf> <./AgentUti-eps-converted-t
+o.pdf>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -674,20 +790,20 @@ Before submitting the final camera ready copy, remember to:
  process uses the appropriate paper size.
 
 - LAST -
-Extra skip:0.0pt
-Left:75.0pt/1.73193pt
-Right:75.0pt/1.41992pt
-Output:75.0pt
+Extra skip:27.604pt
+Left:525.0pt/0.11192pt
+Right:497.396pt/1.41992pt
+Output:525.0pt
 [13] (./paper.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7250 strings out of 493117
- 105708 string characters out of 6138984
- 216135 words of memory out of 5000000
- 10565 multiletter control sequences out of 15000+600000
+ 7270 strings out of 493117
+ 106326 string characters out of 6138984
+ 241091 words of memory out of 5000000
+ 10581 multiletter control sequences out of 15000+600000
  52942 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,22n,32p,1846b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -717,10 +833,10 @@ sbm10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5
 exmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2014/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on paper.pdf (13 pages, 496112 bytes).
+Output written on paper.pdf (13 pages, 556188 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 151 compressed objects within 2 object streams
+ 248 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
