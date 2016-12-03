@@ -1,5 +1,12 @@
 % \documentclass[conference,letterpaper,10pt]{IEEEtran}
-\documentclass[conference,compsocconf,letterpaper,10pt]{IEEEtran}
+\documentclass[10pt,journal,letterpaper,compsoc]{IEEEtran}
+\makeatletter
+\def\ps@headings{%
+\def\@oddhead{\mbox{}\scriptsize\rightmark \hfil \thepage}%
+\def\@evenhead{\scriptsize\thepage \hfil \leftmark\mbox{}}%
+\def\@oddfoot{}%
+\def\@evenfoot{}}
+\makeatother
 \IEEEoverridecommandlockouts
 \usepackage{times}
 \usepackage{helvet}
@@ -19,6 +26,8 @@
 \usepackage{flushend}
 \usepackage{epstopdf}
 
+\usepackage{bbding}
+
 \newtheorem{theorem}{Theorem}
 \newtheorem{definition}{Definition}
 \newtheorem{proposition}{Proposition}
@@ -34,7 +43,7 @@
 \newcommand{\st}{{\em s.t.}}
 
 \renewcommand{\baselinestretch}{1}
-
+\providecommand{\keywords}[1]{\textbf{\textit{Index terms---}} #1}
 
 %\title{A Strategy-Proof and Budget Feasible Online Crowdsensing Mechanism Design with \\Time-Discounting Value}
 \title{\huge{A Strategy-Proof Budget Feasible Online Mechanism for Crowdsensing with Time-Discounting Values}}
@@ -43,14 +52,15 @@ Jiapeng Xie, Shuo Yang, Fan Wu,  Xiaofeng Gao, and Guihai Chen\\
 Shanghai Key Laboratory of Scalable Computing and Systems\\
 Shanghai Jiao Tong University, China\\
 \{xjpsjtu, wnmmxy\}@sjtu.edu.cn; \{fwu, gao-xf, gchen\}@cs.sjtu.edu.cn
-
+\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem J. Xie, F. Wu, and G. Chen are with the Department of Computer Science and Engineering, Shanghai Key Laboratory of Scalable Computing and Systems, Shanghai Jiao Tong University, Shanghai 200240, P.R. China.
+Emails: xjpsjtu@sjtu.edu.cn, \{fwu, gchen\}@cs.sjtu.edu.cn.
+\IEEEcompsocthanksitem F. Wu is the corresponding author.
+\IEEEcompsocthanksitem This work was supported in part by the State Key Development Program for Basic Research of China (973 project 2014CB340303), in part by China NSF grant 61422208, 61472252, 61272443 and 61133006, in part by Shanghai Science and Technology fund 15220721300, in part by CCF-Tencent Open Fund, and in part by the Scientific Research Foundation for the Returned Overseas Chinese Scholars. The opinions, findings, conclusions, and recommendations expressed in this paper are those of the authors and do not necessarily reflect the views of the funding agencies or the government.}
 }
 
 \begin{document}
-
-\maketitle
-
-\begin{abstract}
+\IEEEcompsoctitleabstractindextext{
+	\begin{abstract}
   %Designing an inverse game to promote interactions for intelligent participants has sparked interest within AI. We design a strategy-proof and budget feasible mechanism for an online reverse auction.
   %Budget feasible mechanism extends the classic mechanism design to the realistic setting where the total payment is bounded by a limited budget. We focus on a common online reverse auction where the provider aims to maximum the total value while the payment to the participants doesn't exceed the budget. It is much more challenging for the provider to make decisions in the online scenarios, where participants arrive dynamicly, due to short of future participants' information in contrast to offline scenarios. In this paper, we investigate online budget feasible auctions considering that the value derived from a participant decreases with time. The property of time discounting is common in intertemporal choice scenarios. But rare mechanism designs took it into account previously. We present a truthful framework in which participants will bid their true type, %although the participants will be paid differently in different time which can be menipuated by strategic participants by misreporting her information.
 %instead of manipulating the market by misreporting false information.
@@ -58,6 +68,11 @@ Shanghai Jiao Tong University, China\\
 
 Crowdsensing has become increasingly popular due to its ability to collect a massive amount of real-time data with the help of many individual smartphone users. A crowdsensing platform can utilize the collected data to extract effective information and provide services to service requesters. Due to the rationality of smartphone users, designing an incentive mechanism to compensate the participants for their resources consumption is critical in attracting more participation. Offline incentive mechanism design has been widely studied in various crowdsensing applications, whereas the online scenario, is much more challenging due to the unavailability of future information when the platform has to make user selection decisions. In this paper, we investigate the problem of online crowdsensing by considering a critical property that the values of users’ contributions decrease as time goes by. The time-discounting property is common in inter-temporal choice scenarios but has not been carefully addressed in mechanism design perspective. To handle this problem, we propose a new method to select users based on a time-related threshold, and present a strategyproof framework where participants prefer to submit their true types, instead of manipulating the market by misreporting their private information. We consider two case, one is that the total value is the summation of each participant's contributing value, the other is more general that the total value function is submodular. We name these two mechanisms TDM and TDMS. We prove that our two mechanisms can achieve computational efficiency, budget feasibility, strategy-proofness, and a constant competitive ratio. By comparing our mechanism TDM with two heuristic benchmarks, we show that our design achieves great performance in terms of the total obtained value.
 \end{abstract}
+\keywords{Crowdsensing, Incentive Mechanism, Budget feasible, Time-discounting}
+}
+\maketitle
+
+
 
 \section{Introduction}
 
@@ -719,7 +734,7 @@ Here we prove that a participant can't misreport her cost for more utility. It s
 The mechanism has a constant competitive ratio in the large-scale crowdsensing system.
 \end{theorem}
 \begin{proof}
-In the case where the value is not time-discounting, Zhao \et has proposed a different algorithm to calculate the threshold~\cite{zhao2014crowdsource}:
+In the case where the value is not time-discounting, Zhao \et has proposed a different algorithm to calculate the threshold in Algorithm 6~\cite{zhao2014crowdsource}:
 
 \begin{algorithm}
 \BlankLine
