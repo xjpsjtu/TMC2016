@@ -767,7 +767,7 @@ We implement the design of our budget feasible online mechanism with time-discou
 \begin{itemize}
 \item Total Value: Total value is the total contributions of all selected participants. In the TDM mechanism, the total value is the summation of each participant's value. In the TDMS mechanism, the total value is the output of a submodular function with the input of selected participant set. We will measure the total value from some aspects, \eg, the total budget, the number of participants and some system parameters.
 
-\item Select Ratio: The select ratio is the percentage of participants who is selected by the mechanism.
+\item Selected Ratio: The selected ratio is the percentage of participants who is selected by the mechanism.
 
 \item Budget Utilization: Budget Utilization is the percentage of the used budget.
 \end{itemize}
@@ -829,7 +829,7 @@ We then find the effect of the system parameter $\lambda$ on the total value, wi
 
 In Fig. $3(a)$ and Fig. $3(b)$, we intend to investigate the effect of the system parameter $\lambda$. According to inequality $(9)$, $\lambda$ has an upper bound $\lambda_{max}= \frac{1}{\epsilon}\left(\frac{U}{L}\right)^{l-2}$ and a lower bound $\lambda_{min}=2\left(\frac{U}{L}\right)^{l-1}$, but we don't know how to choose $\lambda$ to maximize the value (even though we can  guarantee a constant competitive ratio). We divide the interval $[\lambda_{min}, \lambda_{max})$ into 100 pieces. We should also consider the effect of different budgets and participants. These two figures show us that with  $\lambda$ getting closer to $\lambda_{min}$, the value is getting higher regardless of the different budgets and participant numbers. This is because when $\lambda$ gets smaller, the threshold gets larger and the total value increases as well. The premise of this phenomenon is the huge number of participants. Considering that there are rare participants competing in this auction, if the threshold is large, some participants will be selected later. The total value will decrease due to the time-discounting property. When there are plentiful participants, the participants with less efficiency will lose and never be selected. In addition, we can also see the competitive ratio in expression $(8)$ has a negative correlation with $\lambda$.
 %% The file named.bst is a bibliography style file for BibTeX 0.99c
-\subsection{Select Ratio}
+\subsection{Selected Ratio}
 In Fig.4(a) and Fig.4(b), we intend to investigate the selected ratio with various numbers of participants and budget respectively. We first vary the budget from 6000 to 15000, with different numbers of participants. As shown in Fig.4(a), the selected ratio increases when the budget gets higher. We can also see that with a fixed budget, the selected ratio decrease with the number of participants. It may be because of the marginal effect. In Fig.4(b), the marginal effect is shown more significant. We infer that when the number of participants gets larger, the budget may be not enough to pay for them. 
 \begin{figure}[!t]
   \centering
@@ -877,11 +877,11 @@ We also intend to find the utilization of budget in our experiment. With the sim
 
 
 \section{Conclusions And Future Work}
-In this paper, we propose a strategy-proof and budget feasible online incentive mechanism for crowdsensing that considers the property of time-discounting values. The method proposed in our paper calculates a selection threshold, selects participants online and pays each selected participant with a carefully designed payment to guarantee strategy-proofness. We consider both the case with the function is a summation and a modular function. We have proved that no participant can get higher utility by misreporting her type. The competitive ratio of our mechanism is constant. The simulation results have shown that our mechanism achieves great performance in terms of the total obtained value.
+In this paper, we propose two strategy-proof and budget feasible online incentive mechanisms TDM and TDMS for crowdsensing that considers the property of time-discounting values. The method proposed in our paper calculates a selection threshold, selects participants online and pays each selected participant with a carefully designed payment to guarantee strategy-proofness. We consider both the case with the total value function is a summation and a modular function. We have proved that no participant can get higher utility by misreporting her type. The competitive ratio of our mechanism is constant. The simulation results have shown that our mechanism achieves great performance in terms of the total obtained value.
 
-In our paper, the time-discounting factor is $\beta_{-t}$,which is also used in the previous work. But in a general model, the value can be represented as $max(v_iF_i(t)+D_i(t),0)$, where $F_i$ and $D_i$ my be arbitrary functions. An attractive direction of fucture work is designing a general mechanism for the general discounting functions.
+In our paper, the time-discounting factor is $\beta^{-t}$,which is also used in the previous work. But in a general model, the value can be represented as $max(v_iF_i(t)+D_i(t),0)$, where $F_i$ and $D_i$ may be arbitrary functions. An attractive direction of fucture work is designing a general mechanism for the general discounting functions.
 \bibliographystyle{IEEEtran}
-\bibliography{IEEEabrv,paperlist}
+\bibliography{IEEEabrv,paper}
 
 % \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.44in,clip,keepaspectratio]{author-jiapeng.eps}}]
 % {Jiapeng Xie} is a graduate student from the Department of Computer Science and Engineering, Shanghai Jiao Tong University, P. R. China. He received his B.S. degree from Nanjing University in 2015. Her research interests lie in game theory and mechanism design in wireless networks. 
